@@ -21,7 +21,7 @@ function ReloadActions(){
 		alert("Sorry, the Action Reloader script only works in versions CS6 and above.");
 		return;
 	}
-	var actionFolder = Folder(Folder.myDocuments + "/" + "Illustrator Actions");
+	var actionFolder = Folder.selectDialog ("Select Folder Contain All your Action");
 	if(!actionFolder.exists){
 		alert("The folder for script-reloadable Actions is not found at '" + decodeURI(actionFolder) + "'");
 		return;
