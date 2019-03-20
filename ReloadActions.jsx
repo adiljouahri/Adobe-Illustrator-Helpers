@@ -21,7 +21,7 @@ function ReloadActions(){
 		alert("Sorry, the Action Reloader script only works in versions CS6 and above.");
 		return;
 	}
-	var actionFolder = Folder.selectDialog ("Select Folder Contain All your Action");
+	var actionFolder = Folder.selectDialog ("Select Folder Contain All your Actions");
 	if(!actionFolder.exists){
 		alert("The folder for script-reloadable Actions is not found at '" + decodeURI(actionFolder) + "'");
 		return;
